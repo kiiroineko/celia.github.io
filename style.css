@@ -55,7 +55,7 @@ img {
   position: absolute;
   margin: 5vw 10vw 5vw 6vw;
   top: 70px;
-  font-size: 10vw;
+  font-size: 100px;
 }
 
 .G2{
@@ -65,7 +65,7 @@ img {
   margin: 7vw 5vw 5vw 5vw;}
 
 @media only screen and (max-width: 600px) {
-  .Greet {font-size: 7vw;}
+  .Greet {font-size: 5vw;}
   .G2{
     font-size: medium;
     top: 20vw; 
@@ -253,7 +253,7 @@ nav.scroll a:hover {
 }
 
 .parallax {
-  background-image: url('trial.jpg');
+  background-image: url('img/trial.jpg');
   min-height: 200px; 
   position: relative;
   background-attachment: fixed;
@@ -612,4 +612,15 @@ i, #Copy{
 .spin:before {
   display: inline-block;
   transition: 1s ease-in-out;
+}
+
+.grid {
+  height: 100vw;
+  margin: 0;
+}
+.grid {
+  background-image:
+    repeating-linear-gradient(#ccc 0 0.5px, transparent 0.5px 50%),
+    repeating-linear-gradient(90deg, #ccc 0 0.5px, transparent 0.5px 50%);
+  background-size: 71px 71px;
 }

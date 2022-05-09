@@ -1,14 +1,16 @@
 const nav = document.querySelector('nav');
-
+const line = document.getElementById('line');
 
 window.addEventListener('scroll',function() {
   const offset = window.pageYOffset;
   
-  if(offset > 900){
+  if(offset > 500){
     nav.classList.add('scroll')
+    line.classList.add('line')
   }
   else 
     nav.classList.remove('scroll')
+    line.classList.add('line')
    
 });
 
