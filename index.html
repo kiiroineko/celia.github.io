@@ -21,6 +21,33 @@
 <title>Celia Chan</title>
 </head>
 
+<body class="loading">
+
+ <div id="loader" ></div>
+
+ <script>
+	 function hideLoader() {
+	   //    Grabbing the loader Element
+	   const loader = document.querySelector('#loader');
+	
+
+	   setTimeout(function() {
+		  //  making its opacity 0
+		  loader.style.opacity = 0;
+	   }, 2000) // 3500 = 3.5 seconds ( 1000 = 1 seconds )
+
+	   setTimeout(function() {
+		document.body.classList.remove("loading");
+	   }, 2000)
+	  
+	 }
+
+	 
+  //    remeber to put this so that it will call the function and then it will work
+	 hideLoader();
+	
+ </script>
+
 <nav>
     <span><i class="fa-solid fa-palette fa-2x spin"></i></span>
 
@@ -30,16 +57,17 @@
       <li><a class="nav" href="#contact">Contact</a></li>
     </ul>
 </nav>
-<body>
+
 <div class="header">
   <div class="imageInn">
     <img src="img/header no move.gif" >
   </div>
+
   <div class="hoverImg">
     <img src="img/header move.gif" >
   </div>
   <div class="Greet focus-in-expand" style="margin-bottom: 40px;"> Celia Chan </div>
-  <h2 class="Greet focus-in-expand G2" > I don't<br>create solutions.<br> I question ;) </div>
+  <h2 class="Greet focus-in-expand G2" > I do all sort of stuffs. <br>Yes, ALL. </div>
 </div>
 
 <div class="scroll-left">
@@ -48,7 +76,7 @@
   
 
 <div id="PJ" class="container-fluid, grid" style="z-index:10; background-color: #ffffff; width:100%;">
- <h1  class="tag ">Recent works</h1>
+ <h1  class="tag ">My works</h1>
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-5 col-sm-4">
@@ -323,7 +351,7 @@
 <div id="contact" class="contact">
   <div class="container-fluid"> <div class="row text Ffooter"><div class="col-sm-5">
     <br>
-    <h1>Contact Me!</h1> 
+    <h1>C you later!</h1> 
 	<h5 style=" color:#ffffff;" ><i class="fa-solid fa-mobile-screen"></i> +852 66218802</h5>
 	<h5><i class="fa-regular fa-envelope"></i>  <a style=" color:#ffffff;
 		text-decoration:none;" href="mailto: csw.celiachan@gmail.com">csw.celiachan@gmail.com</a></h5>

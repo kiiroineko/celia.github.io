@@ -19,6 +19,10 @@ body, p  {
 
 }
 
+body.loading {
+  overflow: hidden;
+}
+
 h1{
   font-family: fatfrank,sans-serif !important;
 }
@@ -933,4 +937,23 @@ img {
 
 .container {
   padding: 2px 16px;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  /* Now lets choose our preloader GIF */
+  background: url('loader new.gif') no-repeat center, #333;
+  background-size: cover;
+  object-fit: cover;
+
+  /* Giving it opacity. so that we can apply fade out effect using js */
+  opacity: 1;
+  /* fade effect */
+  transition: 0.5s linear;
+  z-index: 99;
+  /* Now add pointer events so other things are clickable and etc.. */
+  pointer-events: none;
 }

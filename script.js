@@ -1,5 +1,6 @@
 const nav = document.querySelector('nav');
 const line = document.getElementById('line');
+const myPreloader = document.querySelector('.preloader');
 
 window.addEventListener('scroll',function() {
   const offset = window.pageYOffset;
@@ -26,3 +27,4 @@ function Clipboard_CopyTo(value) {
 document.querySelector('#Copy').onclick = function() {
   Clipboard_CopyTo('Kiiroineko#1607');
 }
+
