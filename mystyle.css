@@ -957,3 +957,13 @@ img {
   /* Now add pointer events so other things are clickable and etc.. */
   pointer-events: none;
 }
+
+.flex{
+  height:50px;
+}
+
+@media screen and (max-width:667px){
+  .flex{
+    height:900px;
+  }
+}
